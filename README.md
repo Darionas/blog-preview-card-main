@@ -18,7 +18,7 @@ Your users should be able to:
 ## Plan workflow
 
 - [x] Create repo (1st task)
-- [ ] Create HTML layout (2nd task)
+- [x] Create HTML layout (2nd task)
 - [ ] Create CSS layout according style guides (3rd task)
 - [ ] Create grid layout for mobile first (4th task)
 - [ ] Craete grid layout for desktop (5th task)
