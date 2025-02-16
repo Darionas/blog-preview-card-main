@@ -7,35 +7,42 @@
       <meta name="keywords" content="Blog, card" />
       <meta name="description" content="Blog preview card" />
       <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="reset.css" />
       <link rel="stylesheet" href="style.css" />
       <link rel="stylesheet" href="FM_part.css" />
   </head>
   <body>
-      <header class="page__header" aria-label="Page header">
-          <h1 class="heading">Frontend</h1>
-      </header>
-      
-      <article class="card">
-          <header class="blog__header" aria-label="Blog header">
-              <img src="./assets/images/illustration-article.svg" alt="" role="img" />
+      <div class="blog__cards">
+          <header class="page__header sr-only" aria-label="Page header">
+              <h1 class="heading">Frontend</h1>
           </header>
-          <section class="blog__content">
-              <span class="blog__purpose blog__purpose--learning">Learning</span>
-              <time datetime="2023-12-21" class="blog__date">Published 21 Dec 2023</time>
-              <a href="#" class="blog__title" aria-label="Read more about HTML & CSS Foundations">HTML & CSS foundations</a>
-              <p class="blog__paragraph">These languages are the backbone of every website, defining structure, content, and presentation.</p>
-          </section>
-          
-          <footer class="blog__footer blog__author" aria-label="Blog footer">
-              <img src="./assets/images/image-avatar.webp" alt="Greg Hooper's profile picture" />
-              <div class="blog__author-name">Greg Hooper</div>
-          </footer>
-      </article>
       
-      <footer class="attribution" aria-label="Page footer">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.frontendmentor.io/profile/Darionas">Darionas</a>.
-      </footer>
+          <article class="card">
+              <header class="blog__header" aria-label="Blog header">
+                  <img class="blog__image" src="./assets/images/illustration-article.svg" alt="" role="img" />
+              </header>
+              <section class="blog__content">
+                  <div class="blog__label">
+                      <span class="blog__label--learning">Learning</span>
+                  </div>
+                  <time datetime="2023-12-21" class="blog__date">Published 21 Dec 2023</time>
+                  <a href="#" class="blog__title" aria-label="Read more about HTML & CSS Foundations">HTML & CSS foundations</a>
+                  <p class="blog__paragraph">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+              </section>
+          
+              <footer class="blog__footer blog__author" aria-label="Blog footer">
+                  <img class="blog__author-image" src="./assets/images/image-avatar.webp" alt="Greg Hooper's profile picture" />
+                  <div class="blog__author-name">Greg Hooper</div>
+              </footer>
+          </article>
+      
+          <footer class="attribution" aria-label="Page footer">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://www.frontendmentor.io/profile/Darionas">Darionas</a>.
+          </footer>
+      </div>
 </body>
 </html>

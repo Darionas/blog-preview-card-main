@@ -1,0 +1,193 @@
+:root {
+    /* colors */
+    --clr-yellow: hsl(47, 88%, 63%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-gray-500: hsl(0, 0%, 42%);
+    --clr-gray-950: hsl(0, 0%, 7%);
+ 
+  
+     /* typography */
+     --ff-primary: "Figtree", serif;
+     --fw-500: 500;
+     --fw-800: 800;
+     --fs-14: 0.875rem;
+     --fs-purpose-date-author: clamp(12px, 0.6rem + 0.5vw, 14px); /*12-14*/
+     --fs-title: clamp(20px, 1.1rem + 0.5vw, 24px); /*20-24*/
+     --fs-para: clamp(14px, 0.7rem + 0.5vw, 16px); /*14-16*/
+ }
+ 
+ body {
+     display: flex;
+     height: 100%;
+     justify-content: center;
+     align-items: center;
+     font-family: var(--ff-primary);
+     background-color: var(--clr-yellow);
+ }
+ 
+ /*---------------------Mobile layout-------------------------*/
+
+.blog__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'page__header'
+        'card'
+        'attribution';
+    justify-items: center;
+    width: 20.4375rem; /*327*/
+    /* height: 31.3125rem; */ /*501*/
+ 
+ /* style 1st component - mobile */
+ .sr-only {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     padding: 0;
+     margin: -1px;
+     overflow: hidden;
+     clip: rect(0, 0, 0, 0);
+     white-space: nowrap;
+     border: 0;
+ }
+ 
+ /* style 2nd component - mobile */
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'blog__header'
+        'blog__content'
+        'blog__footer';
+    gap: 1.5rem; /*24*/
+    padding: 1.5rem; /*24*/
+    justify-items: start;
+    border-radius: 1.25rem; /*20*/
+    box-shadow: 8px 8px #000000;
+    background-color: var(--clr-white);
+}
+
+.blog__image {
+   width: 100%; /*279px - 17.4375rem*/
+   height: 12.5rem; /*200*/
+   border-radius: 0.625rem; /*10*/
+   justify-self: center;
+   object-fit: cover;
+}
+
+.blog__content {
+    display: grid;
+    gap: 0.75rem; /*12*/
+}
+
+.blog__label {
+    display: grid;
+    width: 4.5625rem; /*73*/
+    /* height: 1.625rem; */ /*26*/ 
+    align-items: center;
+    border-radius: .25rem; /*4*/
+    padding: 0.25rem 0.75rem; /*4 12*/
+    background-color: var(--clr-yellow);
+}
+
+.blog__label--learning {
+   /*  width: 3.0625rem; */ /*49*/
+    color: var(--clr-gray-950);
+    font-size: var(--fs-purpose-date-author);
+    font-weight: var(--fw-800);
+}
+
+.blog__date {
+    font-size: var(--fs-purpose-date-author);
+    font-weight: var(--fw-500);
+    color: var(--clr-gray-950);
+}
+
+.blog__title {
+   color: var(--clr-gray-950);
+   font-size: var(--fs-title); 
+   font-weight: var(--fw-800);
+   text-decoration: none;
+   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.blog__paragraph {
+    color: var(--clr-gray-500);
+    font-weight: var(--fw-500);
+    font-size: var(--fs-para);
+}
+
+.blog__footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        'blog__author-image blog__author-name';
+    gap: .75rem; /*12*/
+    align-items: center;
+    justify-items: start;
+}
+
+.blog__author-image {
+    width: 2rem;
+    height: 2rem;
+}
+
+.blog__author-name {
+    width: 5.3125rem;
+    font-size: var(--fs-14);
+    font-weight: var(--fw-800);
+    color: var(--clr-gray-950);
+}
+ 
+ /* style 3rd component - mobile */
+ /* 3rd component is styled in external file */
+ 
+ /*---------------------Desktop layout-------------------------*/
+ /* @media screen and (min-width: 48rem) { */
+ 
+
+ /* style 1st component - desktop */
+ /*No style*/
+ 
+ /*style 2nd component - desktop */
+ 
+ 
+ /* style 3rd component - mobile */
+ /* 3rd component is styled in external file */
+ /*
+ }
+ */
+ 
+ /*---------grid area name--------------*/
+ 
+ .page__header {
+    grid-area: page__header;
+ }
+ 
+ .card {
+     grid-area: card;
+ }
+ 
+ .blog__header {
+     grid-area: blog__header;
+ }
+ 
+ .blog__content {
+     grid-area: blog__content;
+ }
+ 
+ .blog__footer {
+     grid-area: blog__footer;
+ }
+ 
+ .blog__author-image {
+    grid-area: blog__author-image;
+ }
+ 
+ .blog__author-name {
+    grid-area: blog__author-name;
+ }
+ 
+ .attribution {
+    grid-area: attribution;
+ }
