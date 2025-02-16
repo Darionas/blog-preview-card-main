@@ -35,10 +35,9 @@
         'card'
         'attribution';
     justify-items: center;
-    width: 20.4375rem;    
+    width: 20.4375rem; /*327*/
 }
-
-
+ 
  /* style 1st component - mobile */
  .sr-only {
      position: absolute;
