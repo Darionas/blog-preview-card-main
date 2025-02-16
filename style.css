@@ -38,6 +38,7 @@
     width: 20.4375rem;    
 }
 
+
  /* style 1st component - mobile */
  .sr-only {
      position: absolute;
@@ -141,20 +142,36 @@
  /* 3rd component is styled in external file */
  
  /*---------------------Desktop layout-------------------------*/
- /* @media screen and (min-width: 48rem) { */
+ @media screen and (min-width: 48rem) {
  
-
+ .blog__cards {
+     width: 24rem;
+ }
+ 
  /* style 1st component - desktop */
  /*No style*/
  
  /*style 2nd component - desktop */
- 
+ .blog__image {
+    padding: 0;
+    margin: 0;
+}
+
+.blog__label {
+   width: 5.125rem;
+}
+
+.blog__title:hover {
+   cursor: pointer;
+   color: var(--clr-yellow);
+   text-shadow: none;
+}
  
  /* style 3rd component - mobile */
  /* 3rd component is styled in external file */
- /*
+ 
  }
- */
+ 
  
  /*---------grid area name--------------*/
  

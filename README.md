@@ -21,5 +21,10 @@ Your users should be able to:
 - [x] Create HTML layout (2nd task)
 - [x] Create CSS layout according style guides (3rd task)
 - [x] Create grid layout for mobile first (4th task)
+<<<<<<< HEAD
 - [ ] Craete grid layout for desktop (5th task)
 - [ ] Tada it is done. Congratulation you reach your goal.🎉
+=======
+- [x] Craete grid layout for desktop (5th task)
+- [x] Tada it is done. Congratulation you reach your goal.🎉
+>>>>>>> CSS_layout
