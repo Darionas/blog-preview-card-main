@@ -19,7 +19,7 @@ Your users should be able to:
 
 - [x] Create repo (1st task)
 - [x] Create HTML layout (2nd task)
-- [ ] Create CSS layout according style guides (3rd task)
-- [ ] Create grid layout for mobile first (4th task)
+- [x] Create CSS layout according style guides (3rd task)
+- [x] Create grid layout for mobile first (4th task)
 - [ ] Craete grid layout for desktop (5th task)
 - [ ] Tada it is done. Congratulation you reach your goal.🎉
